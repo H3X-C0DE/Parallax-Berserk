@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html{
+height: 100%;
+margin: 0;
+font-size: 16px;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+line-height: 1.5em;
+color: #cbcbcb;
+background: #151515;
+}
+p {
+    max-width: 800px;
+    margin: 15px auto;
+}
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url(/assets/bg1.jpg);
+    min-height: 100%;
+}
+.pimg2 {
+    background-image: url(/assets/bg2.jpg);
+    min-height: 50%;
+}
+.pimg3 {
+    background-image: url(/assets/bg3.jpg);
+    min-height: 50%;
+}
+.pimg4 {
+    background-image: url(/assets/bg4.jpg);
+    min-height: 100%;
+}
+
+section {
+    text-align: center;
+    padding: 50px 80px;
+    border-top: solid red;
+    border-bottom: solid red;
+}
+.sectionContainer {
+background: #1C1C1C;
+}
+.pText {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 5rem;
+
+}
+
+.pBottomText {
+    top:90%;
+}
+.border {
+    /* background: #1c1c1c5b; */
+    padding: 10px 30px 10px 30px;
+    /* border: 5px outset #FF0000; */
+    border-radius: 0px 40px 0px 40px;
+    text-shadow: 3px 3px 2px #1C1C1C;
+    color: #fff;
+}
+
+.heroText {
+    font-size: 8rem;
+    color: #ff0000;
+    text-shadow: 3px 3px 2px #1C1C1C;
+
+}
+.underTitle {
+    color: #e7e7e7;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.2em;
+    margin-top: 20px;
+    background: #000;
+    max-width: 50%;
+    border-radius: 10px;
+  }
+
+.mobil
+{ 
+    display: none;
+}
+.desktop {
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:600px){
+
+    .pimg1, .pimg2, .pimg3, .pimg4 {
+        background-attachment: scroll;
+    }
+    .pText {
+        font-size: 3em;
+    }
+    .heroText {
+        font-size: 1.5em;
+    }
+    .underTitle { 
+        font-size: 0.5em;
+        background: #000;
+        padding-bottom: 130px;
+        box-shadow: 0px -5px 20px 10px #000000;
+        -webkit-box-shadow: 0px -5px 20px 10px #000000; 
+    }
+    .pimg1 {
+        min-height: 70%;
+    }
+    .pimg2 {
+        min-height: 40%;
+    }
+    .pimg3 {
+        min-height: 40%;
+    }
+    .pimg4 {
+        min-height: 100%;
+    }
+    .mobil
+    { 
+        display: block;
+        margin: 10px;
+    }
+    .desktop {
+        display: none;
+    }   
+}
